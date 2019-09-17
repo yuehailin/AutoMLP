@@ -1,0 +1,140 @@
+INFO:radiomics.batch: pyradiomics version: 2.2.0
+INFO:radiomics.batch: Loading CSV
+INFO:radiomics.batch: Loading Done
+INFO:radiomics.batch: Patients: 1
+INFO:radiomics.featureextractor: Loading parameter file E:\upload\BraTS19_2013_6_1_seg\BraTS19_2013_6_1_seg.yaml
+INFO:radiomics.batch: Enabled input images types: {'LoG': {'sigma': [1.0, 2.0, 3.0, 4.0, 5.0]}, 'Original': {}, 'Wavelet': {}}
+INFO:radiomics.batch: Enabled features: {'firstorder': None, 'glcm': None, 'gldm': None, 'glrlm': None, 'glszm': None, 'ngtdm': None, 'shape': None}
+INFO:radiomics.batch: Current settings: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': [1, 1, 1], 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 10, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True, 'binWidth': 25, 'voxelArrayShift': 100}
+INFO:radiomics.batch: (1/1) Processing Patient (Image: E:\upload\BraTS19_2013_6_1_seg\BraTS19_2013_6_1_t1.nii.gz, Mask: E:\upload\BraTS19_2013_6_1_seg\BraTS19_2013_6_1_seg.nii.gz)
+INFO:radiomics.featureextractor: Calculating features with label: 1
+INFO:radiomics.featureextractor: Loading image and mask
+INFO:radiomics.imageoperations: New spacing equal to old, no resampling required, applying pre-crop
+INFO:radiomics.featureextractor: Computing shape
+INFO:radiomics.featureextractor: Adding image type "LoG" with custom settings: {'sigma': [1.0, 2.0, 3.0, 4.0, 5.0]}
+INFO:radiomics.featureextractor: Adding image type "Original" with custom settings: {}
+INFO:radiomics.featureextractor: Adding image type "Wavelet" with custom settings: {}
+INFO:radiomics.imageoperations: Computing LoG with sigma 1
+INFO:radiomics.featureextractor: Calculating features for log-sigma-1-0-mm-3D image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.imageoperations: Computing LoG with sigma 2
+INFO:radiomics.featureextractor: Calculating features for log-sigma-2-0-mm-3D image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.imageoperations: Computing LoG with sigma 3
+INFO:radiomics.featureextractor: Calculating features for log-sigma-3-0-mm-3D image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.imageoperations: Computing LoG with sigma 4
+INFO:radiomics.featureextractor: Calculating features for log-sigma-4-0-mm-3D image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.imageoperations: Computing LoG with sigma 5
+INFO:radiomics.featureextractor: Calculating features for log-sigma-5-0-mm-3D image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Calculating features for original image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.imageoperations: Computing Wavelet LLH
+INFO:radiomics.featureextractor: Calculating features for wavelet-LLH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.imageoperations: Computing Wavelet LHL
+INFO:radiomics.featureextractor: Calculating features for wavelet-LHL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.imageoperations: Computing Wavelet LHH
+INFO:radiomics.featureextractor: Calculating features for wavelet-LHH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.imageoperations: Computing Wavelet HLL
+INFO:radiomics.featureextractor: Calculating features for wavelet-HLL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.imageoperations: Computing Wavelet HLH
+INFO:radiomics.featureextractor: Calculating features for wavelet-HLH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.imageoperations: Computing Wavelet HHL
+INFO:radiomics.featureextractor: Calculating features for wavelet-HHL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.imageoperations: Computing Wavelet HHH
+INFO:radiomics.featureextractor: Calculating features for wavelet-HHH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Calculating features for wavelet-LLL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+WARNING:radiomics.glcm: GLCM is symmetrical, therefore Sum Average = 2 * Joint Average, only 1 needs to be calculated
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm

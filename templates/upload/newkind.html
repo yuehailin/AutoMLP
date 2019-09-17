@@ -1,0 +1,52 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<meta charset="UTF-8">
+    <title>
+      弹出框提交表单
+    </title>
+
+    <link rel="stylesheet" href="../../static/css/newFile.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/jquery-ui.min.css" />
+  </head>
+
+
+  <body>
+  <div>
+    <input type="button" class="my-btn-blue" value="新建" onclick="newFile()">
+  </div>
+  <div id="my_dialog" title="新建图像分类"  style="display: none" >
+    <form action="/add_kind/" method="post">
+        {% csrf_token %}
+{#      <p>图像id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="create_name" name="id" /></p>#}
+      <p>图像种类:&nbsp;&nbsp;&nbsp;<input type="text" id="create_name" name="pickind"/></p>
+      <p>描&nbsp;&nbsp;&nbsp;述:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="des" id="create_name" /></p>
+      <p>文件夹名称:<input type="text" name="filename" id="create_name" /></p>
+
+      <div style="float: right;">
+       <button class="my-btn-gray" type="reset">取消</button>
+       <button class="my-btn-blue" type="submit">保存</button>
+      </div>
+    </form>
+  </div>
+  <div>
+      <form enctype="multipart/form-data" action="/uploadFile/" method="post">
+       {% csrf_token %}
+   <h5>请上传图片</h5>
+    <input type="file" multiple="multiple" name="myfile"/>
+    <h5>请上传标签</h5>
+    <input type="file" multiple="multiple" name="mylabel"/>
+   <br/>
+
+    <br/>
+   <input type="submit" value="upload"/>
+</form>
+  </div>
+  <div>
+      <a href="/coll_feathers/">提取特征</a>
+  </div>
+<script type="text/javascript" src="../../static/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../static/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../static/js/newFile.js"></script>
+</body>
+</html>

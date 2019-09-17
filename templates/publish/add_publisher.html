@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>新增数据</h1>
+<form action="/add_publisher/" method="post">
+    {% csrf_token %}
+    <tr>
+            <th>id</th>
+            <td><input type="text" name="publisher_id"></td>
+        </tr>
+        <tr>
+            <th>出版社名称</th>
+            <td><input type="text" name="publisher_name"></td>
+        </tr>
+
+     <tr>
+            <button type="reset" class="btn btn-default pull-left">重置</button>
+              <button type="submit" class="btn btn-primary pull-right">提交</button>
+        </tr>
+
+</form>
+</body>
+</html>
